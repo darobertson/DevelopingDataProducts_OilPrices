@@ -9,7 +9,7 @@ library(shiny)
              p("the date format is yyyy-mm-dd"),
              dateRangeInput("dateRange", "Date range:",
                             start = Sys.Date()-365,
-                            end = Sys.Date(), min = '2003-01-02', max=Sys.Date())
+                            end = Sys.Date()-1, min = '2003-01-02', max=Sys.Date()-1)
              ),
          mainPanel(
                 strong('Selected date range:'),

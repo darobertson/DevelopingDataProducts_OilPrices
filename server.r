@@ -19,7 +19,7 @@ shinyServer(
 #        output$oilPlot <- renderChart({
 #            plotData <- filter(data, Date > input$dateRange[1], Date < input$dateRange[2] )
 #            dPlot(Value ~ Date, data = plotData, type='line')
-        })
+#        })
         
         
         output$dateRangeText  <- renderText({
